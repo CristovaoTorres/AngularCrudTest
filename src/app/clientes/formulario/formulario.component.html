@@ -11,16 +11,6 @@
 
 
 {{cliente.nome}}
-    <!-- <mat-form-field class="full-width col-4">
-      <mat-select  [(ngModel)]="countries.selected" formControlName="country" placeholder="Country">
-        <mat-option *ngFor="let country of countries" [value]="country">
-          {{ country.name }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field> -->
-
- 
-
 
     <select [(ngModel)]="cliente.carros" name="cliente.carros" >
       <option *ngFor="let c of cliente.carros" [selected]="c.selected == true" [value]="c.id">
