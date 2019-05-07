@@ -1,0 +1,34 @@
+<form (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <!-- <input type="text" class="form-control" name="name" id="nome" [(ngModel)]="cliente.nome"> -->
+  </div>
+
+  <div class="form-group">
+    <label for="tipo">Tipo</label>
+
+
+
+{{cliente.nome}}
+    <!-- <mat-form-field class="full-width col-4">
+      <mat-select  [(ngModel)]="countries.selected" formControlName="country" placeholder="Country">
+        <mat-option *ngFor="let country of countries" [value]="country">
+          {{ country.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field> -->
+
+ 
+
+
+    <select [(ngModel)]="cliente.carros" name="cliente.carros" >
+      <option *ngFor="let c of cliente.carros"  [selected]="c.selected" value="c.id">
+        {{c.modelo}}
+      </option>
+    </select>
+  </div>
+  <input type="submit" class="btn btn-primary mt-4" value="Salvar">
+  <a href="#" class="btn btn-secondary mt-4 ml-2">Cancelar</a>
+
+</form>
