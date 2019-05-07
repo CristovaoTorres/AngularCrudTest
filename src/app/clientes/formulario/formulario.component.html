@@ -23,10 +23,10 @@
 
 
     <select [(ngModel)]="cliente.carros" name="cliente.carros" >
-      <option *ngFor="let c of cliente.carros"  [selected]="c.selected" value="c.id">
-        {{c.modelo}}
-      </option>
-    </select>
+      <option *ngFor="let c of cliente.carros [selected]="c.selected == true" [value]="c.id">
+         {{c.modelo}}
+       </option> 
+     </select>
   </div>
   <input type="submit" class="btn btn-primary mt-4" value="Salvar">
   <a href="#" class="btn btn-secondary mt-4 ml-2">Cancelar</a>
